@@ -11,8 +11,10 @@ public class Loader extends PluginBase {
     }
 
     @Override
-    public void onDisable(){
+    public void onDisable() {
+        if (!isEnabled()) {
+            return;
+        }
         new ModuleManager().callOnDisable();
     }
-
 }

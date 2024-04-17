@@ -15,4 +15,9 @@ public class Main extends Module {
         getServer().getPluginManager().registerEvents(new EventListener(), this.main.getLoader());
         getServer().getCommandMap().register("test", new TestCommand());
     }
+
+    @Override
+    public void onDisable() {
+        super.onDisable();
+    }
 }

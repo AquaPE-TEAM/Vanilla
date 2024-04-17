@@ -28,5 +28,9 @@ public class EventListener implements Listener {
             event.getPlayer().setSpawn(new Utils().rtp());
             event.getPlayer().teleport(new Utils().rtp());
         }
+
+        if(!event.getPlayer().getLoginChainData().isXboxAuthed()){
+            event.getPlayer().kick("§7Для игры на сервере вам необходимо быть авторизованым в §aXBOX LIVE", false);
+        }
     }
 }

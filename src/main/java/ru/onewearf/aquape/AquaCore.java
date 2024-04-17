@@ -2,7 +2,6 @@ package ru.onewearf.aquape;
 
 import lombok.Getter;
 import ru.onewearf.aquape.manager.ModuleManager;
-import ru.onewearf.aquape.module.main.Main;
 
 public class AquaCore {
 
