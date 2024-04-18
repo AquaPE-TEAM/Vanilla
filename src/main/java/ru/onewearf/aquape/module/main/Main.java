@@ -26,7 +26,7 @@ public class Main extends Module {
     public void init() {
         this.coins = new Donate();
         getServer().getPluginManager().registerEvents(new EventListener(this), this.main.getLoader());
-        getServer().getScheduler().scheduleDelayedRepeatingTask(new UpdatePrefix(this), 20, 1);
+        getServer().getScheduler().scheduleRepeatingTask(new UpdatePrefix(this), 20, true);
     }
 
     public String getGroup(Player player){
@@ -36,8 +36,12 @@ public class Main extends Module {
     public String getPrefix(Player player){
         String group = getGroup(player);
 
-        playerGroup.put("default", "\uE16D\uE16E\uE16F");
-        playerGroup.put("owner", "\uE167\uE168\uE169");
+        playerGroup.put("default", "\uE305");
+        playerGroup.put("youtube", "\uE317");
+        playerGroup.put("helper", "\uE30D");
+        playerGroup.put("admin", "\uE308");
+        playerGroup.put("sponsor", "\uE30E");
+        playerGroup.put("owner", "\uE304");
 
         if(playerGroup.containsKey(group)){
             return playerGroup.get(group);
