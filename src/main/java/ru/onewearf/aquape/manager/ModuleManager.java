@@ -3,6 +3,7 @@ package ru.onewearf.aquape.manager;
 import ru.onewearf.aquape.AquaCore;
 import ru.onewearf.aquape.module.Module;
 import ru.onewearf.aquape.module.buyer.Buyer;
+import ru.onewearf.aquape.module.donate.Donate;
 import ru.onewearf.aquape.module.main.Main;
 
 import java.util.HashMap;
@@ -13,6 +14,7 @@ public class ModuleManager {
     private final Map<String, Module> modules = new HashMap<>();
 
     public ModuleManager() {
+        this.register(new Donate());
         this.register(new Main());
         this.register(new Buyer());
         this.getAll();
