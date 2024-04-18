@@ -8,7 +8,7 @@ import ru.onewearf.aquape.module.buyer.utils.Utils;
 
 public class BuyerCommand extends Command {
     public BuyerCommand() {
-        super("buyer", "Открыть скупщика");
+        super("buyer", "§rОткрыть скупщика");
     }
 
     @Override

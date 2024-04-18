@@ -27,7 +27,7 @@ public class Utils {
             }
 
             target.getInventory().removeItem(Item.get(392));
-            LlamaEconomy.getAPI().addMoney(player, 1.03);
+            LlamaEconomy.getAPI().addMoney(player, 1);
         });
 
         inventory.setItem(3, Item.get(391).setCustomName("§r§7Предмет: §cМорковь\n§r§7Цена: §e2.1\n§r§7Редкость: §aНизкая"), (item, event) -> {
@@ -42,7 +42,7 @@ public class Utils {
             }
 
             target.getInventory().removeItem(Item.get(391));
-            LlamaEconomy.getAPI().addMoney(player, 2.1);
+            LlamaEconomy.getAPI().addMoney(player, 2);
         });
 
         inventory.setItem(4, Item.get(457).setCustomName("§r§7Предмет: §cСвекла\n§r§7Цена: §e3.13\n§r§7Редкость: §aНизкая"), (item, event) -> {
@@ -57,7 +57,7 @@ public class Utils {
             }
 
             target.getInventory().removeItem(Item.get(457));
-            LlamaEconomy.getAPI().addMoney(player, 3.13);
+            LlamaEconomy.getAPI().addMoney(player, 3);
         });
 
         inventory.setItem(5, Item.get(477).setCustomName("§r§7Предмет: §cЯгоды\n§r§7Цена: §e0.30\n§r§7Редкость: §aНизкая"), (item, event) -> {
@@ -72,7 +72,7 @@ public class Utils {
             }
 
             target.getInventory().removeItem(Item.get(477));
-            LlamaEconomy.getAPI().addMoney(player, 0.30);
+            LlamaEconomy.getAPI().addMoney(player, 1);
         });
 
         inventory.setItem(6, Item.get(351).setCustomName("§r§7Предмет: §cЧернила\n§r§7Цена: §e5.18\n§r§7Редкость: §aНизкая"), (item, event) -> {
@@ -87,7 +87,7 @@ public class Utils {
             }
 
             target.getInventory().removeItem(Item.get(351));
-            LlamaEconomy.getAPI().addMoney(player, 5.18);
+            LlamaEconomy.getAPI().addMoney(player, 5);
         });
 
         inventory.setItem(21, Item.get(432).setCustomName("§r§7Предмет: §cХорус\n§r§7Цена: §e30.1\n§r§7Редкость: §5Мифическая"), (item, event) -> {
@@ -102,7 +102,7 @@ public class Utils {
             }
 
             target.getInventory().removeItem(Item.get(432));
-            LlamaEconomy.getAPI().addMoney(player, 30.1);
+            LlamaEconomy.getAPI().addMoney(player, 30);
         });
 
         inventory.setItem(22, Item.get(334).setCustomName("§r§7Предмет: §cКожа\n§r§7Цена: §e31.40\n§r§7Редкость: §5Мифическая"), (item, event) -> {
@@ -117,7 +117,7 @@ public class Utils {
             }
 
             target.getInventory().removeItem(Item.get(334));
-            LlamaEconomy.getAPI().addMoney(player, 31.40);
+            LlamaEconomy.getAPI().addMoney(player, 31);
         });
 
         inventory.setItem(23, Item.get(46).setCustomName("§r§7Предмет: §cДинамит\n§r§7Цена: §e40.2\n§r§7Редкость: §5Мифическая"), (item, event) -> {
@@ -132,7 +132,7 @@ public class Utils {
             }
 
             target.getInventory().removeItem(Item.get(46));
-            LlamaEconomy.getAPI().addMoney(player, 40.2);
+            LlamaEconomy.getAPI().addMoney(player, 40);
         });
 
         inventory.setItem(40, Item.get(397, 5).setCustomName("§r§7Предмет: §cГолова дракона\n§r§7Цена: §e503.21\n§r§7Редкость: §eЛегендарная"), (item, event) -> {
@@ -147,7 +147,7 @@ public class Utils {
             }
 
             target.getInventory().removeItem(Item.get(397, 5));
-            LlamaEconomy.getAPI().addMoney(player, 503.21);
+            LlamaEconomy.getAPI().addMoney(player, 503);
         });
 
         player.addWindow(inventory);
