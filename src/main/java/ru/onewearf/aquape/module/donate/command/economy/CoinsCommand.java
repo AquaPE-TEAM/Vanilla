@@ -9,7 +9,7 @@ public class CoinsCommand extends Command {
     private final Donate donate;
 
     public CoinsCommand(Donate donate) {
-        super("coins", "§rПосмотреть баланс коинов.");
+        super("coins", "§r§aПосмотреть баланс коинов");
         this.donate = donate;
     }
 

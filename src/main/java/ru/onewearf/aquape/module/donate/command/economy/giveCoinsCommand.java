@@ -10,7 +10,7 @@ public class giveCoinsCommand extends Command {
 
     private final Donate donate;
     public giveCoinsCommand(Donate donate) {
-        super("givecoins", "§rПосмотреть баланс коинов.");
+        super("givecoins", "Выдать коины");
         this.setPermission("admin.givecoins");
         this.setPermissionMessage("§aКоины §7• §fУ вас недостаточно прав для использования данной команды");
         this.donate = donate;
@@ -19,6 +19,7 @@ public class giveCoinsCommand extends Command {
     @Override
     public boolean execute(CommandSender commandSender, String s, String[] strings) {
         if(!this.testPermissionSilent(commandSender)){
+            this.getPermissionMessage();
             return false;
         }
 

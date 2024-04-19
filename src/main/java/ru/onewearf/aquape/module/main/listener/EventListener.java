@@ -13,6 +13,7 @@ import cn.nukkit.utils.DummyBossBar;
 import me.iwareq.scoreboard.Scoreboard;
 import net.luckperms.api.LuckPerms;
 import net.luckperms.api.LuckPermsProvider;
+import ru.nukkit.multipass.Multipass;
 import ru.onewearf.aquape.module.donate.Donate;
 import ru.onewearf.aquape.module.main.Main;
 import ru.onewearf.aquape.player.AquaPlayer;

@@ -10,7 +10,7 @@ public class DonateCommand extends Command {
     private final Donate coins;
 
     public DonateCommand(Donate donate) {
-        super("donate", "§rОткрыть магазин за коины");
+        super("donate", "§r§aОткрыть магазин за коины");
         this.coins = donate;
     }
 
