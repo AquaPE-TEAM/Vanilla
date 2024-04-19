@@ -1,8 +1,7 @@
 package ru.onewearf.aquape.module.main;
 
 import cn.nukkit.Player;
-import cn.nukkit.scheduler.TaskHandler;
-import net.luckperms.api.LuckPermsProvider;
+import ru.nukkit.multipass.Multipass;
 import ru.onewearf.aquape.module.donate.Donate;
 import ru.onewearf.aquape.module.main.listener.EventListener;
 import ru.onewearf.aquape.module.Module;
@@ -10,7 +9,6 @@ import ru.onewearf.aquape.module.main.task.UpdatePrefix;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Objects;
 
 public class Main extends Module {
     public Donate coins;
@@ -30,7 +28,7 @@ public class Main extends Module {
     }
 
     public String getGroup(Player player){
-        return Objects.requireNonNull(LuckPermsProvider.get().getUserManager().getUser(player.getUniqueId())).getPrimaryGroup();
+        return Multipass.getGroup(player.getName());
     }
 
     public String getPrefix(Player player){
