@@ -25,16 +25,9 @@ public class AquaPlayer extends cn.nukkit.Player {
         Map<String, CommandDataVersions> data = new HashMap<>();
         Iterator var3 = this.server.getCommandMap().getCommands().values().iterator();
 
-        while (var3.hasNext()) {
-            Command command = (Command) var3.next();
-            if (command.isRegistered() && !"help".equals(command.getName())) {
-
-                if (!this.isOp()) {
-                    if (!(command instanceof VanillaCommand)) {
-                        continue;
-                    }
-                }
-
+        while(var3.hasNext()) {
+            Command command = (Command)var3.next();
+            if (command.isRegistered() && !"help".equals(command.getName()) && !(command instanceof VanillaCommand)) {
                 CommandDataVersions commandData = command.generateCustomCommandData(this);
                 if (commandData != null) {
                     /*String description = command.getDescription();
